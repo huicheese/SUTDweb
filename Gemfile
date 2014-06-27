@@ -5,6 +5,9 @@ gem 'rails', '4.1.1'
 
 #gem 'sqlite3-ruby', '1.3.1', :require => 'sqlite3'
 
+gem 'heroku'
+
+
 group :development, :test do
 #  gem 'sqlite3'
   gem 'rspec-rails'
