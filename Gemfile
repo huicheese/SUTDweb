@@ -17,7 +17,7 @@ end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.3.0'
+  #gem 'capybara', '2.3.0'
   gem 'rb-notifu', '0.0.4'
   gem 'wdm', '0.1.0'
 end
