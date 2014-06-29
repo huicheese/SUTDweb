@@ -9,11 +9,15 @@
 #   pool: 5
 #   timeout: 5000
 
-development:
+default: &default
   adapter: postgresql
-  host: localhost
-  username: user
-  database: app-dev
+  pool: 5
+  timeout: 5000
+# development:
+#   adapter: postgresql
+#   host: localhost
+#   username: user
+#   database: app-dev
 
 development:
   <<: *default
