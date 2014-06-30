@@ -13,14 +13,20 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-# development:
-#   adapter: postgresql
-#   host: localhost
-#   username: user
-#   database: app-dev
+  #username: amuudiqbgwhemy
+  #password: zdXEf8m69-AAvtNGh7UX_7T0jo
+development:
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: app-dev
 
 development:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  #username: amuudiqbgwhemy
+  #password: zdXEf8m69-AAvtNGh7UX_7T0jo
   database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
@@ -28,10 +34,14 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  #username: amuudiqbgwhemy
+  #password: zdXEf8m69-AAvtNGh7UX_7T0jo
   database: db/test.sqlite3
 
 production:
   <<: *default
+  #username: amuudiqbgwhemy
+  #password: zdXEf8m69-AAvtNGh7UX_7T0jo
   database: db/production.sqlite3
 
 # development:
